@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>DOM Manipulation Example</title>
+</head>
+
+<body>
+
+<h2>DOM Manipulation Example</h2>
+
+<p id="para">
+This is a paragraph.
+</p>
+
+<button onclick="changeContent()">
+Click Me
+</button>
+
+<script>
+
+function changeContent()
+{
+let p = document.getElementById("para");
+
+p.innerHTML = "Welcome to JavaScript DOM Manipulation";
+
+p.style.color = "blue";
+
+p.style.fontSize = "24px";
+}
+
+</script>
+
+</body>
+
+</html>
