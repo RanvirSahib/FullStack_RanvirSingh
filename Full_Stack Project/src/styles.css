@@ -1,0 +1,281 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* COMMON CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background-color: #2563eb;
+    color: white;
+    padding: 16px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.nav {
+    display: none;
+}
+
+.nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+    }
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: white;
+    color: #2563eb;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: linear-gradient(to right, #3b82f6, #1d4ed8);
+    color: white;
+    padding: 60px 0;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.hero-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    background: white;              /* 🔥 solid white */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* depth */
+    display: flex;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .search-bar {
+        flex-direction: row;
+    }
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f3f4f6;
+    padding: 10px;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.search-input input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+
+.btn-search {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* HERO IMAGE */
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* ================= STATS ================= */
+.stats {
+    background: #f9fafb;
+    padding: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.stat-number {
+    font-size: 32px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.stat-label {
+    color: #6b7280;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #1f2937;
+    color: white;
+    padding: 30px 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+    color: #9ca3af;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+
+/* ================= AUTH FORM IMPROVEMENTS ================= */
+
+/* Make form slightly transparent and clean */
+.search-bar {
+    background: white;              /* 🔥 solid white */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* depth */
+    display: flex;
+    gap: 10px;
+}
+
+/* Improve input look */
+.search-input input {
+    font-size: 14px;
+}
+
+/* Button full width for auth */
+.btn-search {
+    width: 100%;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Center form better */
+.hero-text {
+    max-width: 400px;
+}
+
+/* Improve spacing */
+.hero-title {
+    font-size: 32px;
+}
+
+.hero-subtitle {
+    margin-bottom: 20px;
+}
+
+/* Smooth hover */
+.btn-search:hover {
+    background: #1e40af;
+}
+
+/* Image styling */
+.hero-image img {
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+}
